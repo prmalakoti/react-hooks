@@ -30,3 +30,11 @@ useState: `useState` is a React Hook that lets you add state to functional compo
 State:`State` is a way to store and manage data within a component — like variables that can change over time and cause the UI to update.
 
 useEffect: `useEffect` is used to perform side effects in our components.
+
+useContext: `useContext` hook is used to manage global data in react application.
+useCases - 1. Global state 2. Themes 3. Services 3. User Settings
+Three Steps to setup context.
+
+1. Creating the Context.
+2. Providing the Context.
+3. Consuming the Context.
