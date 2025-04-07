@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import UseReferenceTimer from "./UseReferenceTimer";
+
 function UseReference() {
   const firstInputRef = useRef(null);
   const secondInputRef = useRef(null);
@@ -10,7 +11,7 @@ function UseReference() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h3> useRef...</h3>
+      <h3> 4. useRef...</h3>
       <input
         ref={firstInputRef}
         type="text"
@@ -24,13 +25,13 @@ function UseReference() {
         placeholder="Second input"
         style={{ display: "block", marginBottom: "10px" }}
       />
-
       <button onClick={focusSecondInput}>Focus Second Input</button>
       <br></br>
+
       <h4>
         Timer: Store values that persist but don’t trigger re-renders --|{" "}
       </h4>
-      <UseReferenceTimer />
+      <UseReferenceTimer></UseReferenceTimer>
     </div>
   );
 }

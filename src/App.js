@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
 
-import Context from "./components/Context";
-
 const App = () => {
   const [counter, setCounter] = useState(0);
   const [input, setInput] = useState("");
@@ -19,10 +17,10 @@ const App = () => {
   console.log(JSON.stringify(details));
   return (
     <div style={{ textAlign: 'center', paddingTop: '20px' }}>
+      <h3> 1. useState </h3>
       <input type="text" onChange={(e) => setInput(e.target.value)} />
       <h2> {input} has clicked {counter} times</h2>
       <button onClick={incrementCounter}>Increment</button>
-      <Context></Context>
     </div>
   )
 }

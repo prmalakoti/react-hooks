@@ -1,13 +1,22 @@
-import React, { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 function UseReferenceTimer() {
+  const [name, setName] = useState("");
+  //const [count, setCount] = useState(0);
   const count = useRef(0);
 
-  const increment = () => {
-    count.current += 1;
-    console.log("Count (doesn't re-render):", count.current);
-  };
+  useEffect(() => {
+    //setCount(count + 1);
+    count.current = count.current + 1;
+  });
 
-  return <button onClick={increment}>Log Count</button>;
+  return (
+    <div style={{ padding: "20px" }}>
+      <input type="text" onChange={(e) => setName(e.target.value)} />
+      <h3> Name : {name}</h3>
+      <h3> Renders : {count.current}</h3>
+    </div>
+  );
 }
 
 export default UseReferenceTimer;

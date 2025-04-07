@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import Effect from './Effect'
 import UseReference from './UseReference';
+import Context from "./components/Context";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
     <Effect />
-    <UseReference></UseReference>
+    <Context />
+    <UseReference />
   </React.StrictMode>
 );

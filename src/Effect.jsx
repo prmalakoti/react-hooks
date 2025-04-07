@@ -20,7 +20,7 @@ const Effect = () => {
 
   return (
     <div style={{ textAlign: "center", paddingTop: "20px" }}>
-      <h3>useEffect...</h3>
+      <h3> 2. useEffect...</h3>
       <h3>{count} new message!</h3>
       <button onClick={() => setCount(count + 1)}>Increase</button>
 
