@@ -28,3 +28,5 @@ Hooks are built-in React functions that allow you to use React features in funct
 useState: `useState` is a React Hook that lets you add state to functional components.
 
 State:`State` is a way to store and manage data within a component — like variables that can change over time and cause the UI to update.
+
+useEffect: `useEffect` is used to perform side effects in our components.
