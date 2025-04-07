@@ -38,3 +38,5 @@ Three Steps to setup context.
 1. Creating the Context.
 2. Providing the Context.
 3. Consuming the Context.
+
+useRef : `useRef` store mutable values that don’t cause re-renders when changed
